@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITA</title>
+    <link rel="stylesheet" href="CSS/estilizacao.css">
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <div id="navegacao">
+                <nav>
+                    <ul>
+                        <li><a href="PaginaPrincipal.html">Home</a></li>
+                        <li><a href="Programacao.html">Programação</a></li>
+                        <li class="paginaAtual"><a href="Inscricao.html">Inscrição</a></li>
+                        <li><a href="Localizacao.html">Local</a></li>
+                        <li><a href="Organizacao.html">Comitê</a></li>
+                        <li><img src="Imagens/logoCita02.png" alt="logo_pequena" width="100" height="30"></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main id="inscricao">
+        <form action="Agradecimento.html" method="get">
+            <div>
+                <div id ="perguntas">
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nomeVisitante" placeholder="Digite seu nome completo" required>
+                    </div>
+                    <div>
+                        <label for="Cpf">Cpf</label>
+                        <input type="text" id="Cpf" name="CpfVisitante" required>
+                    </div>
+                    <div>
+                        <label for="Email">E-mail</label>
+                        <input type="email" id="Email" name="emailVisitante" required>
+                    </div>
+                    <div>
+                        <label for="idade">Idade</label>
+                        <input type="number" id="idade" name="idadeVisitante" required>
+                    </div>
+                </div>
+                <fieldset id="escolha">
+                    <legend>Sexo</legend>
+                    <div>
+                        <input type="radio" id="masculino" name="sexo" value="masculino">
+                        <label for ="masculino">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="feminino" name="sexo" value="feminino">
+                        <label for ="feminino">Feminino</label>
+                    </div>
+                </fieldset>
+                <fieldset id="escolha">
+                    <legend>O que mais te interessa?</legend>
+                    <div>
+                        <input type="checkbox" id="bigData" name="informacao" value="bigData">
+                        <label for ="bigData">Big Data e Análise de Dados no Agronegócio</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="drones" name="informacao" value="drones">
+                        <label for ="drones">Uso de Drones e Veículos Autônomos na Agricultura</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="IA" name="informacao" value="IA">
+                        <label for ="IA">Inteligência Artificial e Aprendizado de Máquina na Produção Agrícola</label>
+                    </div>
+                    <div>
+                        <input type ="checkbox" id="blockchain" name="informacao" value="blockchain">
+                        <label for ="blockchain">Blockchain e Rastreabilidade de Alimentos</label>
+                    </div>
+                    <div>
+                        <input type ="checkbox" id="IoT" name="informacao" value="IoT">
+                        <label for ="IoT">Internet das Coisas (IoT) na Agricultura</label>
+                    </div>
+                    <div>
+                        <input type ="checkbox" id="tecnologia" name="informacao" value="tecnologia">
+                        <label for ="tecnologia">Tecnologias para Monitoramento e Controle de Pragas e Doenças</label>
+                    </div>
+                </fieldset>
+                <fieldset id="escolha">
+                    <legend>Nível de experiência em tecnologia Agroinformática</legend>
+                    <div>
+                        <select name="Nivel" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="Iniciante">Iniciante</option>
+                            <option value="Intermediário">Intermediário</option>
+                            <option value="Avançado">Avançado</option>
+                            <option value="Especialista">Especialista</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset id="escolha">
+                    <legend>Tire suas dúvidas aqui</legend>
+                    <div>
+                        <label for="texto"></label>
+                        <textarea name="digiteaqui" id="texto" cols="30" rows="10" maxlength="2000"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset id="escolha">
+                    <legend>Deseja enviar um arquivo?</legend>
+                    <div>
+                        <label for="arquivo">Coloque a imagem aqui</label>
+                        <input type="file" id="arquivo" name="fotos">
+                    </div>
+                </fieldset>
+                
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div> 
+        </form>
+
+    </main>
+    <footer>
+        <div class="container_footer">
+            <div class="footer-column">
+                <h3>Contato</h3>
+                <p><img src="Imagens/telefone.png" alt="telefone" width="30" height="30"> Telefone: (34) 99856-7890</p>
+                <p><img src="Imagens/email.png" alt="email" width="30" height="30"> Email: cita_agrotech@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
